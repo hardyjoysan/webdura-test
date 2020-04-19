@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="19" height="21">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-336 -21L39 -21L39 646L-336 646Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000;stroke: #000000;stroke-width: 2 } 
+		.shp1 { fill: #000000;stroke: #000000;stroke-linecap:round;stroke-width: 3 } 
+		.shp2 { fill: #000000 } 
+	</style>
+	<g id="Page 1" clip-path="url(#cp1)">
+		<g id="HeaderBar">
+			<g id="menu_notification_normal">
+				<path id="Path 1347" class="shp0" d="M2.42 18C7.14 18 11.87 18 16.59 18C18.16 17.41 14.7 15.21 14.7 13.36C14.7 11.5 14.7 12.43 14.7 9.64C14.7 6.86 13.76 5 9.03 5C4.31 5 4.31 9.64 4.31 9.64C4.31 9.64 4.31 11.5 4.31 13.36C4.31 15.21 0.82 17.39 2.42 18Z" />
+				<path id="Path 1348" class="shp1" d="M9.5 4L9.5 3" />
+				<path id="Path 1349" class="shp2" d="M7.05 17L11.95 17C11.98 17.21 12 17.44 12 17.67C12 19.51 10.88 21 9.5 21C8.12 21 7 19.51 7 17.67C7 17.44 7.02 17.21 7.05 17Z" />
+			</g>
+		</g>
+	</g>
+</svg>

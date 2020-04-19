@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18" width="22" height="18">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-17 -23L358 -23L358 644L-17 644Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #000000;stroke-linecap:round;stroke-width: 2.5 } 
+	</style>
+	<g id="Page 1" clip-path="url(#cp1)">
+		<g id="HeaderBar">
+			<g id="header_menu_normal">
+				<path id="Line 144" class="shp0" d="M3 3L19 3L3 3Z" />
+				<path id="Line 145" class="shp0" d="M3 9L19 9L3 9Z" />
+				<path id="Line 146" class="shp0" d="M3 15L19 15L3 15Z" />
+			</g>
+		</g>
+	</g>
+</svg>

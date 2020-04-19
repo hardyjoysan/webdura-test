@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12" width="11" height="12">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-21 -461L354 -461L354 206L-21 206Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #9ecbda } 
+	</style>
+	<g id="Page 1" clip-path="url(#cp1)">
+		<g id="Body">
+			<g id="ManageServiceCard">
+				<g id="ServiceDetails">
+					<g id="Location">
+						<g id="component_clipart_location">
+							<g id="Group 1132">
+								<path id="Path 1335" fill-rule="evenodd" class="shp0" d="M1.52 8.89C-0.51 6.85 -0.51 3.56 1.52 1.52C3.56 -0.51 6.85 -0.51 8.89 1.52C10.92 3.56 10.92 6.85 8.89 8.89C8.59 9.18 5.89 11.72 5.86 11.74C5.49 12.08 4.92 12.09 4.55 11.74C4.52 11.72 1.81 9.17 1.52 8.89ZM5.11 10.02C5.16 10.07 5.25 10.07 5.31 10.02C5.31 10.02 7.45 8 7.72 7.72C9.11 6.33 9.11 4.08 7.72 2.69C6.33 1.3 4.08 1.3 2.69 2.69C1.3 4.08 1.3 6.33 2.69 7.72C2.96 8 5.11 10.02 5.11 10.02ZM3.56 5.21C3.56 4.3 4.3 3.56 5.21 3.56C6.11 3.56 6.85 4.3 6.85 5.21C6.85 6.11 6.11 6.85 5.21 6.85C4.3 6.85 3.56 6.11 3.56 5.21Z" />
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

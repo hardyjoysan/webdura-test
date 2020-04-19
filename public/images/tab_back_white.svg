@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 19" width="12" height="19">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-18 -77L357 -77L357 590L-18 590Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-width: 3 } 
+	</style>
+	<g id="Page 1" clip-path="url(#cp1)">
+		<g id="TabBar">
+			<g id="tab_back_white">
+				<path id="Line 15" class="shp0" d="M9 3.09L3 9.09L9 3.09Z" />
+				<path id="Line 16" class="shp0" d="M9 15.59L3 9.59L9 15.59Z" />
+			</g>
+		</g>
+	</g>
+</svg>
