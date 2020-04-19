@@ -9,6 +9,7 @@ import StatusBar from './StatusBar';
 import Avatar from './Avatar';
 import MetaContent from './MetaContent';
 import Invoice from './Invoice';
+import QRtoast from './QRtoast';
 
 class Booking extends React.Component {
 
@@ -35,7 +36,8 @@ class Booking extends React.Component {
 
   render() {
     return(
-      <Container className="booking_main">
+      <Container className="booking_main" fluid>
+        {this.props.status === "ACTIVE" && <QRtoast /> }
         {
           this.state.bookings.map((booking)=>
             <div className="booking_card" key={"book_" + booking._id}>
@@ -73,8 +75,7 @@ class Booking extends React.Component {
             </div>
           )
         }
-
-          <span className="the_end">No more service requests</span>
+        <span className="the_end">No more service requests</span>
       </Container>
     )
   }
