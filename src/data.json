@@ -1,0 +1,40 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "title": "Yoga and Pilate Training",
+        "type": "Training",
+        "category": "Fitness",
+        "description": "This yoga and pilate training session is designed for all levels of trainees",
+        "price": 80.00
+      },
+      {
+        "id": 2,
+        "title": "Soccer novice practice",
+        "type": "Practice",
+        "category": "Sports",
+        "description": "This soccer training session is designed for all levels of trainees",
+        "price": 100.00
+      }
+    ],
+    "bookings": [
+      {
+        "booking_id": 101,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "booking_id": 102,
+        "status": "ACTIVE",
+        "service_id": 1,
+        "updated_at": "12 April 2020 10:36:11"
+      },
+      {
+        "booking_id": 103,
+        "status": "PAYMENT",
+        "service_id": 1,
+        "updated_at": "15 April 2020 10:36:11"
+      }
+    ]
+}
