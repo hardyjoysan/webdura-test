@@ -15,14 +15,14 @@ class Booking extends React.Component {
 
   componentDidMount(){
     this.setState({
-      bookings: data.bookings.filter((book) => book.status === this.props.status)
+      bookings: data.bookings.filter((book) => book.status === this.props.status && book.service_id === this.props.service_id)
     })
   }
 
   componentDidUpdate(prevProps){
-    if (prevProps.status !== this.props.status) {
+    if (prevProps.status !== this.props.status || prevProps.service_id !== this.props.service_id) {
       this.setState({
-        bookings: data.bookings.filter((book) => book.status === this.props.status)
+        bookings: data.bookings.filter((book) => book.status === this.props.status && book.service_id === this.props.service_id)
       })
     }
   }
@@ -114,7 +114,8 @@ class Booking extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    status: state.active_status
+    status: state.active_status,
+    service_id: state.service_id
   }
 }
 

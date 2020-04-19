@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   Container, Col, Row, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle
 } from 'reactstrap';
+import { connect } from 'react-redux';
 
 import data from "../data";
 
@@ -10,9 +11,14 @@ const Slider = (props) => {
   const [services] = useState(data.services);
   const [service, setService] = useState(data.services[0]);
 
-  const pointerClick = (id, e) => {
-    services.filter((service) => (service.id === id) ? setService(service) : "")
+  const pointerClick = (id) => {
+    services.filter((service) => (service.id === id) ? setService(service) : "");
+    props.onPointerClick(id);
   }
+
+  useEffect(() => {
+    props.onPointerClick(service.id);
+  })
 
   const pointers = services.map(svc =>
     <li
@@ -50,4 +56,19 @@ const Slider = (props) => {
   );
 };
 
-export default Slider;
+const mapStateToProps = (state) => {
+  return {
+    service_id: state.service_id
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return{
+    onPointerClick: (id) => {
+        const action = {type: "SERVICE_CHANGE", service_id: id};
+        dispatch(action);
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps) (Slider);

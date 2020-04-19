@@ -8,8 +8,10 @@ const initState = {
 const reducer = (state = initState, action) => {
   switch (action.type) {
     case "SERVICE_CHANGE":
-        console.log("service change action");
-        return;
+        return {
+          ...state,
+          service_id: action.service_id
+        }
 
     case "BOOKING_TAB":
         return {
