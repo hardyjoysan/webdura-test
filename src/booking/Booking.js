@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import data from "../data";
 
+import StatusText from './StatusText';
+
 class Booking extends React.Component {
 
   constructor(props){
@@ -35,10 +37,7 @@ class Booking extends React.Component {
             <div className="booking_card" key={"book_" + booking._id}>
               <Row>
                 <Col xs="4">
-                  <div className="status_txt">
-                    <p>Pending Request</p>
-                    <span>10:22 am, 12/01/2019</span>
-                  </div>
+                  <StatusText status={booking.status} updated_at={booking.updated_at}/>
                 </Col>
                 <Col xs="8">
                   <ul className="status_bar">
