@@ -1,4 +1,7 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+
+import Store from './Store';
 
 import Header from './header/Header';
 import Toptab from './toptab/Tobtab';
@@ -7,13 +10,12 @@ import Booking from './booking/Booking';
 
 function App() {
   return (
-    <div className="App">
-        <Header/>
-        <Toptab/>
-        <Slider/>
-        <Booking/>
-    </div>
-
+    <Provider store={Store}>
+      <Header/>
+      <Toptab/>
+      <Slider/>
+      <Booking/>
+    </Provider>
   );
 }
 

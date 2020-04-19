@@ -19,22 +19,28 @@
     ],
     "bookings": [
       {
-        "booking_id": 101,
+        "_id": 101,
         "status": "PENDING",
         "service_id": 1,
         "updated_at": "19 April 2020 10:36:11"
       },
       {
-        "booking_id": 102,
+        "_id": 102,
         "status": "ACTIVE",
         "service_id": 1,
         "updated_at": "12 April 2020 10:36:11"
       },
       {
-        "booking_id": 103,
+        "_id": 103,
         "status": "PAYMENT",
         "service_id": 1,
         "updated_at": "15 April 2020 10:36:11"
+      },
+      {
+        "_id": 104,
+        "status": "PENDING",
+        "service_id": 2,
+        "updated_at": "19 April 2020 10:36:11"
       }
     ]
 }
