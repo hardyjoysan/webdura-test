@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11" width="12" height="11">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-169 -279L206 -279L206 388L-169 388Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-width: 2 } 
+	</style>
+	<g id="Page 3" clip-path="url(#cp1)">
+		<g id="Body">
+			<g id="ManageServiceCard">
+				<g id="ServiceStatusBar">
+					<g id="ServiceProgressBar">
+						<g id="Group 5">
+							<g id="Group 4">
+								<path id="Line 2" class="shp0" d="M2.61 5.79L4.84 8.02L2.61 5.79Z" />
+								<path id="Line 3" class="shp0" d="M9.3 2.61L4.84 8.01L9.3 2.61Z" />
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -5,6 +5,10 @@ import { connect } from 'react-redux';
 import data from "../data";
 
 import StatusText from './StatusText';
+import StatusBar from './StatusBar';
+import Avatar from './Avatar';
+import MetaContent from './MetaContent';
+import Invoice from './Invoice';
 
 class Booking extends React.Component {
 
@@ -40,34 +44,13 @@ class Booking extends React.Component {
                   <StatusText status={booking.status} updated_at={booking.updated_at}/>
                 </Col>
                 <Col xs="8">
-                  <ul className="status_bar">
-                    <li>
-                      <span className="point">1</span>
-                      <span className="text">Request</span>
-                    </li>
-                    <li>
-                      <span className="point">2</span>
-                      <span className="text">Service</span>
-                    </li>
-                    <li>
-                      <span className="point">3</span>
-                      <span className="text">Payment</span>
-                    </li>
-                  </ul>
+                  <StatusBar status={booking.status} />
                 </Col>
               </Row>
 
               <Row>
                 <Col xs="6">
-                  <div className="avatar">
-                    <div className="pic">
-                      <img src="/images/avatar.png" alt="avatar"/>
-                    </div>
-                    <div className="txt">
-                      <p>Ray Presley</p>
-                      <span>San Francisco</span>
-                    </div>
-                  </div>
+                  <Avatar />
                 </Col>
                 <Col xs="6">
                   <div className="deals">
@@ -76,24 +59,10 @@ class Booking extends React.Component {
                 </Col>
               </Row>
 
-              <div className="meta_cont">
-                <div className="time_meta">
-                  <p className="grey">This customer is available at:</p>
-                  <div className="date_row">
-                    <div className="single">
-                      <strong>Sunday, December 22nd, 2019</strong>
-                      <strong className="right">9:00 am — 2:00 pm</strong>
-                    </div>
-                    <div className="single">
-                      <strong>Sunday, December 29nd, 2019</strong>
-                      <strong className="right">9:00 am — 2:00 pm</strong>
-                    </div>
-                  </div>
-                </div>
-                <div className="addr_meta">
-                  <span>50 Hagiwara Tea Garden Dr, San Francisco, CA 94118</span>
-                </div>
-              </div>
+              {booking.status === "PAYMENT"
+                ? <Invoice />
+                : <MetaContent />
+              }
 
               <div className="action_btn">
                 <Button outline color="info">Accept Request</Button>
