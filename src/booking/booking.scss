@@ -315,7 +315,6 @@
         background-position: center top;
       }
     }
-
   }
 
   .view_books{
@@ -323,6 +322,12 @@
     width: 100%;
     border-radius: 0;
     background-color: #008ab8;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    &:active, &:focus{
+      box-shadow: none !important;
+    }
   }
 
   .the_end{
