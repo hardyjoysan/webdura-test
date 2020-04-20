@@ -12,6 +12,8 @@ import Invoice from './components/Invoice';
 import QRtoast from './components/QRtoast';
 import ActionButtons from './components/ActionButtons';
 
+localStorage.setItem('bookings', JSON.stringify(data.bookings));
+
 class Booking extends React.Component {
 
   constructor(props){
@@ -22,16 +24,21 @@ class Booking extends React.Component {
   }
 
   componentDidMount(){
-    this.setState({
-      bookings: data.bookings.filter((book) => book.status === this.props.status && book.service_id === this.props.service_id)
-    })
+    this.onUpdateBooking();
   }
 
   componentDidUpdate(prevProps){
     if (prevProps.status !== this.props.status || prevProps.service_id !== this.props.service_id) {
+      this.onUpdateBooking();
+    }
+  }
+
+  onUpdateBooking = () => {
+    let data_bookings = localStorage.bookings ? JSON.parse(localStorage.bookings) : [];
+    if(data_bookings.length !== 0){
       this.setState({
-        bookings: data.bookings.filter((book) => book.status === this.props.status && book.service_id === this.props.service_id)
-      })
+        bookings: data_bookings.filter((book) => book.status === this.props.status && book.service_id === this.props.service_id)
+      });
     }
   }
 
@@ -67,7 +74,7 @@ class Booking extends React.Component {
                 : <MetaContent />
               }
 
-              <ActionButtons status={booking.status} book_id={booking._id} />
+              <ActionButtons status={booking.status} book_id={booking._id} updateBooks={this.onUpdateBooking} />
 
             </div>
           )
