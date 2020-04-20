@@ -30,7 +30,7 @@ const Slider = (props) => {
   );
 
   return (
-    <Container>
+    <Container className="slider_main">
       <Card className="slide_card" key={service.id}>
         <Row>
           <Col xs="5" className="img_hold">

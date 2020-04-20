@@ -60,7 +60,7 @@ const ActionButtons = (props) => {
         return;
     }
   }
-  
+
   return(
     <div className="action_btn">
       {swithButtons()}

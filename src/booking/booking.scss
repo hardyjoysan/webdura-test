@@ -1,9 +1,9 @@
 .booking_main{
   max-width: 530px;
-  margin: 25px auto;
+  margin: 0px auto;
+  padding: 0 10px;
 
   .qrtoast{
-    display: block;
     width: 100%;
     background-color: #008ab8;
     display: flex;
@@ -18,8 +18,11 @@
       margin-top: 15px;
     }
     a{
-      margin-top: 20px;
-      margin-right: 15px;
+      display: contents;
+      vertical-align: middle;
+      img{
+        margin: 0 10px;
+      }
     }
   }
 
@@ -30,21 +33,19 @@
     background-color: #ffffff;
     border: 1px solid #dddddd;
     margin-bottom: 15px;
+    padding: 10px;
 
     .status_txt{
-      margin-top: 15px;
-      margin-left: 15px;
       p{
         font-size: 12px;
-        letter-spacing: 0px;
         color: #d16800;
         font-family: "Roboto";
         font-weight: 700;
         margin-bottom: 0;
+        white-space: nowrap;
       }
       span{
         font-size: 10px;
-        letter-spacing: 0px;
         color: #888888;
         font-family: "Roboto";
         font-weight: 400;
@@ -56,15 +57,13 @@
       width: fit-content;
       list-style: none;
       padding: 0;
-      margin-top: 15px;
+      margin-top: 5px;
       position: relative;
-      margin-right: 15px;
       float: right;
       li{
         display: inline-block;
-        margin-right: 50px;
+        margin-right: 30px;
         font-size: 10px;
-        letter-spacing: 0px;
         color: #888888;
         font-family: "Roboto";
         font-weight: 700;
@@ -82,7 +81,6 @@
           background-color: #dddddd;
           border: 1px solid #ffffff;
           font-size: 10px;
-          letter-spacing: 0px;
           color: #ffffff;
           font-family: "Roboto";
           font-weight: 900;
@@ -111,12 +109,12 @@
         .linebar{
           display: block;
           content: "";
-          width: 75px;
+          width: 55px;
           height: 6px;
           background-color: #dddddd;
           position: absolute;
           top: 5px;
-          left: 25px;
+          left: 20px;
           z-index: -1;
           &.active{
             background-color: #9ecbda;
@@ -127,7 +125,6 @@
 
     .avatar{
       display: flex;
-      margin-left: 15px;
       .pic{
         display: block;
         width: 45px;
@@ -140,7 +137,6 @@
         margin-top: 15px;
         p{
           font-size: 12px;
-          letter-spacing: 0px;
           color: #008ab8;
           font-family: "Roboto";
           font-weight: 700;
@@ -149,7 +145,6 @@
         }
         span{
           font-size: 10px;
-          letter-spacing: 0px;
           color: #000000;
           font-weight: bold;
         }
@@ -160,7 +155,6 @@
       display: block;
       width: 140px;
       font-size: 12px;
-      letter-spacing: 0px;
       color: #000000;
       font-family: "Roboto";
       font-weight: 700;
@@ -175,11 +169,10 @@
 
     .meta_cont{
       margin-top: 15px;
-      padding: 15px;
+      padding: 15px 0;
       .time_meta{
         p.grey{
           font-size: 11px;
-          letter-spacing: 0px;
           color: #888888;
           font-family: "Roboto";
           font-weight: 700;
@@ -194,15 +187,16 @@
           background-position: left 2px;
           .single{
             line-height: 18px;
+            position: relative;
+            top: -2px;
             strong{
               font-size: 12px;
-              letter-spacing: 0px;
               color: #000000;
               font-family: "Roboto";
               font-weight: 500;
               &.right{
                 float: right;
-                margin-right: 0px;
+                margin-top: 1px;
               }
             }
           }
@@ -218,7 +212,6 @@
         margin-top: 15px;
         span{
           font-size: 12px;
-          letter-spacing: 0px;
           color: #008ab8;
           font-family: "Roboto";
           font-weight: 500;
@@ -228,11 +221,9 @@
 
     .invoice{
       display: block;
-      padding: 15px;
       margin-top: 15px;
       .info{
         font-size: 11px;
-        letter-spacing: 0px;
         color: #888888;
         font-family: "Roboto";
         font-weight: 700;
@@ -275,8 +266,7 @@
 
     .action_btn{
       display: flex;
-      margin: 10px 0 35px;
-      padding: 0 15px;
+      margin: 10px 0 25px;
       .btn{
         width: 120px;
         height: 28px;
@@ -284,13 +274,13 @@
         background-color: #ffffff;
         border: 1px solid #008ab8;
         font-size: 12px;
-        letter-spacing: 0px;
         color: #008ab8;
         font-family: "Roboto";
         font-weight: 700;
         text-align: center;
-        margin-left: 20px;
+        margin-left: 10px;
         line-height: 0;
+        white-space: nowrap;
         &:hover{
           color: #ffffff;
           background-color: #008ab8;
@@ -298,7 +288,6 @@
       }
       .more_ico{
         font-size: 10px;
-        letter-spacing: 0px;
         color: #008ab8;
         font-family: "Roboto";
         font-weight: bold;
@@ -306,7 +295,7 @@
         display: block;
         width: 40px;
         height: 20px;
-        margin-left: 15px;
+        margin-left: 10px;
         margin-top: 4px;
         padding-top: 5px;
         text-transform: capitalize;
@@ -333,11 +322,31 @@
   .the_end{
     display: block;
     font-size: 11px;
-    letter-spacing: 0px;
     color: #888888;
     font-family: "Roboto";
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 340px){
+  .booking_main .booking_card{
+    .meta_cont{
+      margin-top: 0px;
+      padding: 10px 0;
+      .time_meta .date_row .single strong{
+        font-size: 65%;
+      }
+      .addr_meta{
+        margin-top: 5px;
+        span{
+          font-size: 65%;
+        }
+      }
+    }
+    .action_btn{
+      margin: 10px 0 10px;
+    }
   }
 }

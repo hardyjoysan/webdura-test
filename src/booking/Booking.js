@@ -39,14 +39,12 @@ class Booking extends React.Component {
     let data_bookings = localStorage.bookings ? JSON.parse(localStorage.bookings) : [];
     if(data_bookings.length !== 0){
       let newBooks = data_bookings.filter((book) => book.status === this.props.status && book.service_id === this.props.service_id);
-      if (newBooks.length !== 0) {
-        var paginated = newBooks.slice(0, 5 * this.state.hits);
-        var viewmore = paginated.length >= newBooks.length ? false : true;
-        this.setState({
-          bookings: paginated,
-          viewmore: viewmore
-        });
-      }
+      var paginated = newBooks.slice(0, 5 * this.state.hits);
+      var viewmore = newBooks.length > paginated.length ? true : false;
+      this.setState({
+        bookings: paginated,
+        viewmore: viewmore
+      });
 
     }
   }
@@ -101,7 +99,7 @@ class Booking extends React.Component {
           ? <Button className="view_books" onClick={this.onViewMore}>View More</Button>
           : <span className="the_end">No more service requests</span>
         }
-        
+
       </Container>
     )
   }
