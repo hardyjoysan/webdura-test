@@ -19,7 +19,85 @@
     ],
     "bookings": [
       {
-        "_id": 101,
+        "_id": 1001,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1002,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1003,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1004,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1005,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1006,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1007,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1008,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1009,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1011,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1012,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1013,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1014,
+        "status": "PENDING",
+        "service_id": 1,
+        "updated_at": "19 April 2020 10:36:11"
+      },
+      {
+        "_id": 1015,
         "status": "PENDING",
         "service_id": 1,
         "updated_at": "19 April 2020 10:36:11"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Row } from 'reactstrap';
+import { Container, Col, Row, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 
 import data from "../data";
@@ -19,7 +19,9 @@ class Booking extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      bookings: []
+      bookings: [],
+      hits: 1,
+      viewmore: true
     }
   }
 
@@ -36,10 +38,25 @@ class Booking extends React.Component {
   onUpdateBooking = () => {
     let data_bookings = localStorage.bookings ? JSON.parse(localStorage.bookings) : [];
     if(data_bookings.length !== 0){
-      this.setState({
-        bookings: data_bookings.filter((book) => book.status === this.props.status && book.service_id === this.props.service_id)
-      });
+      let newBooks = data_bookings.filter((book) => book.status === this.props.status && book.service_id === this.props.service_id);
+      if (newBooks.length !== 0) {
+        var paginated = newBooks.slice(0, 5 * this.state.hits);
+        var viewmore = paginated.length >= newBooks.length ? false : true;
+        this.setState({
+          bookings: paginated,
+          viewmore: viewmore
+        });
+      }
+
     }
+  }
+
+  onViewMore = async () => {
+    var more = this.state.hits + 1;
+    await this.setState({
+      hits: more
+    })
+    this.onUpdateBooking();
   }
 
   render() {
@@ -79,7 +96,12 @@ class Booking extends React.Component {
             </div>
           )
         }
-        <span className="the_end">No more service requests</span>
+
+        {this.state.viewmore === true
+          ? <Button className="view_books" onClick={this.onViewMore}>View More</Button>
+          : <span className="the_end">No more service requests</span>
+        }
+        
       </Container>
     )
   }
