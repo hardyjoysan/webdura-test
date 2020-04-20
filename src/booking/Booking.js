@@ -1,15 +1,16 @@
 import React from 'react';
-import { Container, Col, Row, Button } from 'reactstrap';
+import { Container, Col, Row } from 'reactstrap';
 import { connect } from 'react-redux';
 
 import data from "../data";
 
-import StatusText from './StatusText';
-import StatusBar from './StatusBar';
-import Avatar from './Avatar';
-import MetaContent from './MetaContent';
-import Invoice from './Invoice';
-import QRtoast from './QRtoast';
+import StatusText from './components/StatusText';
+import StatusBar from './components/StatusBar';
+import Avatar from './components/Avatar';
+import MetaContent from './components/MetaContent';
+import Invoice from './components/Invoice';
+import QRtoast from './components/QRtoast';
+import ActionButtons from './components/ActionButtons';
 
 class Booking extends React.Component {
 
@@ -66,11 +67,7 @@ class Booking extends React.Component {
                 : <MetaContent />
               }
 
-              <div className="action_btn">
-                <Button outline color="info">Accept Request</Button>
-                <Button outline color="info">Reschedule</Button>
-                <a href="/" className="more_ico">more</a>
-              </div>
+              <ActionButtons status={booking.status} book_id={booking._id} />
 
             </div>
           )
