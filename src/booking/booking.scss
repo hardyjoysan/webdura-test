@@ -109,7 +109,7 @@
         .linebar{
           display: block;
           content: "";
-          width: 55px;
+          width: 60px;
           height: 6px;
           background-color: #dddddd;
           position: absolute;
@@ -134,14 +134,13 @@
       }
       .txt{
         margin-left: 15px;
-        margin-top: 15px;
+        margin-top: 5px;
         p{
           font-size: 12px;
           color: #008ab8;
           font-family: "Roboto";
           font-weight: 700;
-          margin: 0;
-          line-height: 0px;
+          margin-bottom: -5px;
         }
         span{
           font-size: 10px;
@@ -168,7 +167,6 @@
     }
 
     .meta_cont{
-      margin-top: 15px;
       padding: 15px 0;
       .time_meta{
         p.grey{
@@ -333,7 +331,6 @@
 @media (max-width: 340px){
   .booking_main .booking_card{
     .meta_cont{
-      margin-top: 0px;
       padding: 10px 0;
       .time_meta .date_row .single strong{
         font-size: 65%;

@@ -34,7 +34,7 @@ const Slider = (props) => {
       <Card className="slide_card" key={service.id}>
         <Row>
           <Col xs="5" className="img_hold">
-            <CardImg top width="100%" src="/images/yoga.png" alt="Card image" />
+            <CardImg top width="100%" src={service.image} alt="Card image" />
           </Col>
           <Col xs="7">
             <CardBody>

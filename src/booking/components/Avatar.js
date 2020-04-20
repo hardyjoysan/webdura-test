@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Avatar = () => {
+const Avatar = (props) => {
   return (
     <div className="avatar">
       <div className="pic">
         <img src="/images/avatar.png" alt="avatar"/>
       </div>
       <div className="txt">
-        <p>Ray Presley</p>
-        <span>San Francisco</span>
+        <p>{props.name}</p>
+        <span>{props.place}</span>
       </div>
     </div>
   )

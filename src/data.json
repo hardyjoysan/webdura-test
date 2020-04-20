@@ -3,6 +3,7 @@
       {
         "id": 1,
         "title": "Yoga and Pilate Training",
+        "image": "/images/1.png",
         "type": "Training",
         "category": "Fitness",
         "description": "This yoga and pilate training session is designed for all levels of trainees",
@@ -11,6 +12,7 @@
       {
         "id": 2,
         "title": "Soccer novice practice",
+        "image": "/images/2.png",
         "type": "Practice",
         "category": "Sports",
         "description": "This soccer training session is designed for all levels of trainees",
@@ -22,102 +24,104 @@
         "_id": 1001,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Ray Presley",
+        "place": "San Francisco",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1002,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Luka Modric",
+        "place": "New York City",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1003,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Lional Messi",
+        "place": "London",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1004,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Arron Eckhart",
+        "place": "Tokyo",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1005,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Chrsit Dorna",
+        "place": "Amsterdam",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1006,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Bob Marley",
+        "place": "Seoul",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1007,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Sidhart Roa",
+        "place": "Mumbai",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1008,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Alan Morte",
+        "place": "Madrid",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1009,
         "status": "PENDING",
         "service_id": 1,
+        "name": "Tony Dsilva",
+        "place": "Oslo",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 1011,
         "status": "PENDING",
         "service_id": 1,
-        "updated_at": "19 April 2020 10:36:11"
-      },
-      {
-        "_id": 1012,
-        "status": "PENDING",
-        "service_id": 1,
-        "updated_at": "19 April 2020 10:36:11"
-      },
-      {
-        "_id": 1013,
-        "status": "PENDING",
-        "service_id": 1,
-        "updated_at": "19 April 2020 10:36:11"
-      },
-      {
-        "_id": 1014,
-        "status": "PENDING",
-        "service_id": 1,
-        "updated_at": "19 April 2020 10:36:11"
-      },
-      {
-        "_id": 1015,
-        "status": "PENDING",
-        "service_id": 1,
+        "name": "Marit Helski",
+        "place": "Nairobi",
         "updated_at": "19 April 2020 10:36:11"
       },
       {
         "_id": 102,
         "status": "ACTIVE",
         "service_id": 1,
+        "name": "Berlin Nitor",
+        "place": "Denver",
         "updated_at": "12 April 2020 10:36:11"
       },
       {
         "_id": 103,
         "status": "PAYMENT",
         "service_id": 1,
+        "name": "Miracle Admin",
+        "place": "Rio",
         "updated_at": "15 December 2019 10:36:11"
       },
       {
         "_id": 104,
         "status": "PENDING",
         "service_id": 2,
+        "name": "Kylan Mbappe",
+        "place": "Stockholm",
         "updated_at": "20 January 2020 23:45:11"
       }
     ]

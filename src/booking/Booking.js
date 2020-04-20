@@ -75,7 +75,7 @@ class Booking extends React.Component {
 
               <Row>
                 <Col xs="6">
-                  <Avatar />
+                  <Avatar name={booking.name} place={booking.place} />
                 </Col>
                 <Col xs="6">
                   <div className="deals">
@@ -86,7 +86,7 @@ class Booking extends React.Component {
 
               {booking.status === "PAYMENT"
                 ? <Invoice />
-                : <MetaContent />
+                : <MetaContent status={booking.status} />
               }
 
               <ActionButtons status={booking.status} book_id={booking._id} updateBooks={this.onUpdateBooking} />
